@@ -200,3 +200,9 @@ footer {
     font-size: 1.5rem;
   }
 }
+
+.method-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+}
