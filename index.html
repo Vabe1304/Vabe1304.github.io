@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Valentina Agudelo</title>
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <nav>
   <ul class="nav-links">
-    <li><a href="index.html">About</a></li>
+    <li><a href="index.html" class="active">About</a></li>
     <li><a href="pages/education.html">Education</a></li>
     <li><a href="pages/experience.html">Experience</a></li>
     <li><a href="pages/contact.html">Contact</a></li>
@@ -18,67 +21,67 @@
 </nav>
 
 <section class="about">
-  <img src="assets/profile.jpg" class="profile-img">
+  <img src="assets/profile.jpg" class="profile-img reveal float-soft" />
 
-  <h1>Valentina Agudelo Echeverri</h1>
+  <h1 class="reveal reveal-delay-1">Valentina Agudelo Echeverri</h1>
 
-  <p>
+  <p class="reveal reveal-delay-2">
     Biological Engineer with strong training in bioinformatics and advanced molecular biology techniques.
-    Skilled in omics data processing with hands-on expertise in laboratory environments, ensuring data quality and reproducibility.
+    Skilled in omics data processing with hands-on laboratory expertise and reproducible research workflows.
   </p>
 
-  <p>
-    Solid background in engineering foundations and data integration, complemented by international research experience.
+  <p class="reveal reveal-delay-3">
+    Focused on integrating computational and experimental approaches to generate clinically meaningful insights.
   </p>
 </section>
 
+<!-- 🔥 VISION PRO SKILLS -->
 <section class="skills-section">
 
   <h2 class="reveal">Skills</h2>
 
-  <div class="skills-carousel">
+  <div class="skills-carousel" id="carousel">
+    <div class="skills-track" id="track">
 
-    <!-- BIOINFORMATICS -->
-    <div class="skill-card">
-      <h3>Bioinformatics</h3>
+      <div class="skill-card">
+        <h3>Bioinformatics</h3>
+        <ul class="skill-details">
+          <li>NGS & RNA-Seq analysis</li>
+          <li>Nextflow workflows</li>
+          <li>Biomolecular modeling</li>
+          <li>Phylogenetics & evolution</li>
+        </ul>
+      </div>
 
-      <ul class="skill-details">
-        <li>NGS & RNA-Seq analysis</li>
-        <li>Nextflow workflows</li>
-        <li>Biomolecular modeling</li>
-        <li>Phylogenetics & evolution</li>
-      </ul>
+      <div class="skill-card">
+        <h3>Laboratory Skills</h3>
+        <ul class="skill-details">
+          <li>Experimental design & QC</li>
+          <li>Sample preparation</li>
+          <li>Molecular biology techniques</li>
+          <li>AFM, SEM, Raman</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Programming & Data</h3>
+        <ul class="skill-details">
+          <li>Python (ML + Data)</li>
+          <li>Machine Learning</li>
+          <li>Linux & SQL</li>
+          <li>AWS basics</li>
+        </ul>
+      </div>
+
     </div>
-
-    <!-- LAB -->
-    <div class="skill-card">
-      <h3>Laboratory Skills</h3>
-
-      <ul class="skill-details">
-        <li>Experimental design & QC</li>
-        <li>Sample preparation</li>
-        <li>Molecular biology techniques</li>
-        <li>AFM, SEM, Raman</li>
-      </ul>
-    </div>
-
-    <!-- PROGRAMMING -->
-    <div class="skill-card">
-      <h3>Programming & Data</h3>
-
-      <ul class="skill-details">
-        <li>Python (ML + Data Science)</li>
-        <li>Machine Learning models</li>
-        <li>Linux & SQL</li>
-        <li>Basic AWS</li>
-      </ul>
-    </div>
-
   </div>
 
 </section>
 
+<footer>
+  <p>© 2026 Valentina Agudelo Echeverri</p>
+</footer>
 
-  
+<script src="script.js"></script>
 </body>
 </html>
